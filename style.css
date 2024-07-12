@@ -1,0 +1,137 @@
+body
+{
+    background-color: #ddd;
+    height: 100vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.buttons-abm {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.input_group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+label {
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+input {
+   width: 300px;
+}
+
+#FormDatos
+{
+    background-color: #fff;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.buttons 
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0px;
+}
+
+#FormDatos {
+    background-color: #fff;
+    border: 2px solid black;
+}
+
+#FormDatos h1 {
+    margin-bottom: 15px; 
+    text-align: center; 
+}
+
+#formulario {
+    background-color: #fff;
+    border: 2px solid black; 
+    display: none;
+    height: 60vh;
+    width: 500px;
+}
+
+#formulario h1 {
+    margin-top: 90px;
+    text-align: center;
+}
+
+.renglones
+{
+    display: flex;
+    left: auto;
+}
+
+table 
+{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td 
+{
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th 
+{
+    background-color: #f2f2f2;
+}
+
+.hidden-column 
+{
+    display: none;
+}
+
+#formulario button 
+{
+    float: left;
+}
+
+#spinner-container 
+{
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Fijo en la pantalla */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco semi-transparente */
+    z-index: 1000; /* Por encima de otros elementos */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+#spinner 
+{
+    border: 16px solid #f3f3f3; /* Color gris claro */
+    border-top: 16px solid #3498db; /* Azul en la parte superior */
+    border-radius: 50%; /* Redondeado */
+    width: 120px; /* Ancho */
+    height: 120px; /* Alto */
+    animation: spin 2s linear infinite; /* Animación de giro */
+}
+
+@keyframes spin 
+{
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

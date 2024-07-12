@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperatorio segundo parcial</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div id="spinner-container">
+        <div id="spinner"></div>
+    </div>
+
+    <div id="FormDatos">
+        <h1 id="titulo">Form datos</h1>
+        
+        <table id="tabla_Cliente_Empleados">
+            <thead>
+                <tr>
+                    <th><button type="button" id="orderID">ID</button></th>
+                    <th><button type="button" id="orderNombre">Nombre</button></th>
+                    <th><button type="button" id="orderApellido">Apellido</button></th>
+                    <th><button type="button" id="orderEdad">Edad</button></th>
+                    <th><button type="button" id="orderAlterEgo">Alter Ego</button></th>
+                    <th><button type="button" id="orderCiudad">Ciudad</button></th>
+                    <th><button type="button" id="orderPublicado">Publicado</button></th>
+                    <th><button type="button" id="orderEnemigo">Enemigo</button></th>
+                    <th><button type="button" id="orderRobos">Robos</button></th>
+                    <th><button type="button" id="orderAsesinatos">Asesinatos</button></th>
+                </tr>
+            </thead>
+            <tbody id="tablaDatos">
+
+            </tbody>
+        </table>
+
+        <div class="buttons">
+            <button id="btn_registrar">Agregar Elemento</button>
+        </div> 
+    </div >
+    <div id="formulario">
+
+        <h1 id="formTitulo"></h1>
+
+        <div class="form-inputs">
+            <div class="input_group">
+                <label for="id">ID:</label>
+                <input type="text" id="id" name="id" readonly>
+            </div>
+            <div class="input_group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+            </div>
+            <div class="input_group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido">
+            </div>
+            <div class="input_group">
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad">
+            </div>
+            <div class="input_group">
+                <label for="tipo">Tipo:</label>
+                <select id="tipo" name="tipo">
+                    <option value="">Seleccione...</option>
+                    <option value="heroe">Heroe</option>
+                    <option value="villano">Villano</option>
+                </select>
+            </div>
+            <div class="input_group">
+                <label for="alterEgo">Alter Ego:</label>
+                <input type="text" id="alterEgo" name="alterEgo">
+            </div>
+            <div class="input_group">
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad">
+            </div>
+            <div class="input_group">
+                <label for="publicado">Publicado:</label>
+                <input type="number" id="publicado" name="publicado">
+            </div>
+            <div class="input_group">
+                <label for="enemigo">Enemigo:</label>
+                <input type="text" id="enemigo" name="enemigo">
+            </div>
+            <div class="input_group">
+                <label for="robos">Robos:</label>
+                <input type="number" id="robos" name="robos">
+            </div>
+            <div class="input_group">
+                <label for="asesinatos">Asesinatos:</label>
+                <input type="number" id="asesinatos" name="asesinatos">
+            </div>
+            <div class="input_group buttons-abm">
+                <button id="btn_agregar">Agregar</button>
+                <button id="btn_modificar">Modificar</button>
+                <button id="btn_eliminar">Eliminar</button>
+                <button id="btn_cancelar">Cancelar</button>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+</body>
+</html>

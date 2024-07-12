@@ -199,7 +199,7 @@ function validarDatos(nuevoElemento)
         alert("Nombre y Apellido son campos obligatorios.");
         return false;
     }
-    if (nuevoElemento.edad === null) {
+    if (!nuevoElemento.edad) {
         alert("La edad no puede ser nula.");
         return false;
     }
